@@ -1,7 +1,7 @@
 import React from "react";
 // const React = require("react");
 import { Component } from 'react';
-import { render } from "@testing-library/react";
+// import { render } from "@testing-library/react";
 import fire from './congif';
 import Home from './Home';
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -26,13 +26,13 @@ class App extends Component {
     fire.auth().onAuthStateChanged((user) => {
       console.log(user);
       if (user) {
-        var displayName = user.displayName;
-        var email = user.email;
-        var emailVerified = user.emailVerified;
-        var photoURL = user.photoURL;
-        var isAnonymous = user.isAnonymous;
-        var uid = user.uid;
-        var providerData = user.providerData;
+        // var displayName = user.displayName;
+        // var email = user.email;
+        // var emailVerified = user.emailVerified;
+        // var photoURL = user.photoURL;
+        // var isAnonymous = user.isAnonymous;
+        // var uid = user.uid;
+        // var providerData = user.providerData;
         // localStorage.setItem('user', user.uid);
       }
       else {

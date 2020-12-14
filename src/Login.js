@@ -1,9 +1,10 @@
 import fire from './congif';
 import React, { Component } from 'react';
-import { render } from '@testing-library/react';
+// import { render } from '@testing-library/react';
 import Button from 'react-bootstrap/Button';
-import Home from './Home';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+// import Home from './Home';
+import { Link } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import './css/Login.css';
 class Login extends Component {

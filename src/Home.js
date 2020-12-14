@@ -1,7 +1,8 @@
-import React, { Component,useState } from 'react';
-import { Button } from 'react-bootstrap';
-import Login from './Login';
-import { BrowserRouter as Router, Route ,Link} from "react-router-dom";
+import React from 'react';
+// import React, { Component,useState } from 'react';
+// import { Button } from 'react-bootstrap';
+// import Login from './Login';
+// import { BrowserRouter as Router, Route ,Link} from "react-router-dom";
 import NavigationBar from './navbar';
 import 'bootstrap/dist/css/bootstrap.css';
 import './css/Home.css';
@@ -12,10 +13,10 @@ function Home() {
   
   function ToDoCard (props) {
     return (
-      <div className="col-md-6 col-xl-3 p-2">
+      <div className="col-md-6 col-xl-3 p-2 text-center">
         <div className="card todo-item">
           <h4 className="todos-title">{props.todoTitle}</h4>
-          <p className="todos-description">{props.details}</p>
+          <p className="todos-description text-muted">{props.details}</p>
           <p className="todos-deadline">{props.deadline}</p>
         </div>
       </div>
@@ -28,6 +29,12 @@ function Home() {
         < NavigationBar />
 
         <div className="container-fluid Dashboard">
+          <div className="row">
+            <ToDoCard todoTitle="Task 1" details="Important Task" deadline="Dec 21, 2020" />
+            <ToDoCard todoTitle="Task 2" details="Quite Important Task" deadline="Tonight" />
+            <ToDoCard todoTitle="Task 3" details="Not so Important Task" deadline="Dec 25, 2020" />
+            <ToDoCard todoTitle="Add Task" details="New Task" deadline="[To Be Declared]" />
+          </div>
         </div>
 
     </div>
